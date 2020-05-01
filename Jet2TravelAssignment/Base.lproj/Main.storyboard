@@ -73,12 +73,12 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wXq-Yp-FSA">
-                                                    <rect key="frame" x="20" y="352.5" width="386" height="70"/>
+                                                    <rect key="frame" x="20" y="352.5" width="386" height="55"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QpQ-ms-Xnk">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QpQ-ms-Xnk">
                                                             <rect key="frame" x="0.0" y="0.0" width="386" height="18"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znd-NL-fwc">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znd-NL-fwc">
                                                                     <rect key="frame" x="0.0" y="0.0" width="386" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,10 +86,10 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cbO-JM-JNE">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cbO-JM-JNE">
                                                             <rect key="frame" x="0.0" y="26" width="386" height="18"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BX6-y9-FqM">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BX6-y9-FqM">
                                                                     <rect key="frame" x="0.0" y="0.0" width="386" height="18"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="zjn-lI-yyP"/>
@@ -100,11 +100,11 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8cp-Xb-Kbv">
-                                                            <rect key="frame" x="0.0" y="52" width="386" height="18"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8cp-Xb-Kbv">
+                                                            <rect key="frame" x="0.0" y="52" width="386" height="3"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKk-e6-r6I">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKk-e6-r6I">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="3"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="4eO-EZ-usH"/>
                                                                     </constraints>
@@ -117,7 +117,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPl-Of-Mej">
-                                                    <rect key="frame" x="20" y="442.5" width="38.5" height="3"/>
+                                                    <rect key="frame" x="20" y="427.5" width="38.5" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -154,7 +154,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="fPl-Of-Mej" secondAttribute="bottom" constant="20" symbolic="YES" id="nzD-mv-ceX"/>
                                                 <constraint firstItem="wXq-Yp-FSA" firstAttribute="leading" secondItem="Afl-E1-DOS" secondAttribute="leading" constant="20" symbolic="YES" id="rEb-rs-IjB"/>
                                                 <constraint firstItem="Kc1-WU-YAj" firstAttribute="leading" secondItem="Afl-E1-DOS" secondAttribute="leading" constant="20" symbolic="YES" id="xyF-95-Bl2"/>
-                                                <constraint firstItem="2Jc-Vm-0Ze" firstAttribute="top" secondItem="wXq-Yp-FSA" secondAttribute="bottom" constant="5" id="y59-3u-sqN"/>
+                                                <constraint firstItem="2Jc-Vm-0Ze" firstAttribute="top" secondItem="wXq-Yp-FSA" secondAttribute="bottom" constant="20" id="y59-3u-sqN"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
