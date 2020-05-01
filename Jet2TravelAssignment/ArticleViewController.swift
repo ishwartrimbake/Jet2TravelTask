@@ -7,14 +7,12 @@
 //
 
 import UIKit
-import JGProgressHUD
 class ArticleViewController: UIViewController {
     
     @IBOutlet var articleTableView: UITableView!
     let articleViewModel : ArticleViewModel = ArticleViewModel()
     var articleTableData : [ArticleModel]? = nil
     var pageIndex : Int = 1
-    var hud : JGProgressHUD = JGProgressHUD()
     var activityIndicator: LoadMoreActivityIndicator!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +21,11 @@ class ArticleViewController: UIViewController {
         articleTableView.rowHeight = UITableView.automaticDimension
         articleTableView.tableFooterView = UIView()
         activityIndicator = LoadMoreActivityIndicator(scrollView: articleTableView, spacingFromLastCell: 10, spacingFromLastCellWhenLoadMoreActionStart: 60)
-       showProgressHUD()
        getArticle(pageIndex: pageIndex);
        NotificationCenter.default.addObserver(self, selector: #selector(self.methodOfReceivedNotification(notification:)), name: Notification.Name("NotificationIdentifier"), object: nil)
     }
    @objc func methodOfReceivedNotification(notification: Notification) {
     self.articleTableView.reloadData()
-    }
-
-    func showProgressHUD(){
-        hud = JGProgressHUD(style: .dark)
-        hud.textLabel.text = "Fetching Details..."
-        hud.show(in: self.view)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,7 +45,6 @@ class ArticleViewController: UIViewController {
                print("response:- \(String(describing: self.articleTableData))");
                DispatchQueue.main.async {
                     self.articleTableView.reloadData()
-                self.hud.dismiss()
                 }
             }
         }
