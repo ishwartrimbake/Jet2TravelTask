@@ -13,19 +13,39 @@ class ArticleViewController: UIViewController {
     @IBOutlet var articleTableView: UITableView!
     let articleViewModel : ArticleViewModel = ArticleViewModel()
     var articleTableData : [ArticleModel]? = nil
+    var pageIndex : Int = 1
     
+    var activityIndicator: LoadMoreActivityIndicator!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        getArticle(pageIndex: 1);
-        
+        articleTableView.estimatedRowHeight = 100
+        articleTableView.rowHeight = UITableView.automaticDimension
+        articleTableView.tableFooterView = UIView()
+        activityIndicator = LoadMoreActivityIndicator(scrollView: articleTableView, spacingFromLastCell: 10, spacingFromLastCellWhenLoadMoreActionStart: 60)
+
+        getArticle(pageIndex: pageIndex);
+       NotificationCenter.default.addObserver(self, selector: #selector(self.methodOfReceivedNotification(notification:)), name: Notification.Name("NotificationIdentifier"), object: nil)
+    }
+   @objc func methodOfReceivedNotification(notification: Notification) {
+    self.articleTableView.reloadData()
     }
 
-    private func getArticle(pageIndex : Int){
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
+    func getArticle(pageIndex : Int){
         articleViewModel.getArticle(pageIndex: pageIndex) { (articleApiResponse) in
             if(articleApiResponse != nil)
             {
-                self.articleTableData = articleApiResponse
+                if((self.articleTableData?.count) != nil){
+                    self.articleTableData?.append(contentsOf: articleApiResponse!)
+                }else{
+                    self.articleTableData = articleApiResponse
+                }
+                
+               
                 print("response:- \(String(describing: self.articleTableData))");
 
                DispatchQueue.main.async {
