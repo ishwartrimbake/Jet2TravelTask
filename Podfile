@@ -9,7 +9,6 @@ target 'Jet2TravelAssignment' do
 
   target 'Jet2TravelAssignmentTests' do
     inherit! :search_paths
-    # Pods for testing
     pod 'JGProgressHUD'
   end
 

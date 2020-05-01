@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A059CA3EDE2A5242B972610 /* Pods_Jet2TravelAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCFA36B1E19CDB8A4CE3C92 /* Pods_Jet2TravelAssignment.framework */; };
+		39E035C412132CCF8D17FA16 /* Pods_Jet2TravelAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0095A186E69DD23DFF9030B8 /* Pods_Jet2TravelAssignmentTests.framework */; };
 		6D1C43A62459561A00245C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C43A52459561A00245C22 /* AppDelegate.swift */; };
 		6D1C43A82459561A00245C22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C43A72459561A00245C22 /* SceneDelegate.swift */; };
 		6D1C43AD2459561A00245C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C43AB2459561A00245C22 /* Main.storyboard */; };
@@ -26,8 +28,7 @@
 		6D1C43E82459A44300245C22 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C43E72459A44300245C22 /* ArticleTableViewCell.swift */; };
 		6D1C43EA2459A4E600245C22 /* ArticleViewControllerExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C43E92459A4E600245C22 /* ArticleViewControllerExtenstion.swift */; };
 		6DFE3C97245B583700D08014 /* LoadMoreActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE3C96245B583700D08014 /* LoadMoreActivityIndicator.swift */; };
-		6FF48B0D59DFE9E8508CA98E /* Pods_Jet2TravelAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207A8BFB3BEE1318A8CF7DA6 /* Pods_Jet2TravelAssignmentTests.framework */; };
-		E8BC7784236D602E326BCEB8 /* Pods_Jet2TravelAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0704C64180B34A574D7C60 /* Pods_Jet2TravelAssignment.framework */; };
+		6DFE3CB3245C9E0B00D08014 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6DFE3CB2245C9E0B00D08014 /* JGProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		207A8BFB3BEE1318A8CF7DA6 /* Pods_Jet2TravelAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TravelAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A0704C64180B34A574D7C60 /* Pods_Jet2TravelAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TravelAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0095A186E69DD23DFF9030B8 /* Pods_Jet2TravelAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TravelAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AC9ED8EF7A0542712B9EDA /* Pods-Jet2TravelAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TravelAssignment.debug.xcconfig"; path = "Target Support Files/Pods-Jet2TravelAssignment/Pods-Jet2TravelAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		1D60935CD5C5099693190F5A /* Pods-Jet2TravelAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TravelAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Jet2TravelAssignmentTests/Pods-Jet2TravelAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1DCFA36B1E19CDB8A4CE3C92 /* Pods_Jet2TravelAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TravelAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1C43A22459561A00245C22 /* Jet2TravelAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jet2TravelAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1C43A52459561A00245C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D1C43A72459561A00245C22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,10 +69,8 @@
 		6D1C43E72459A44300245C22 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		6D1C43E92459A4E600245C22 /* ArticleViewControllerExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewControllerExtenstion.swift; sourceTree = "<group>"; };
 		6DFE3C96245B583700D08014 /* LoadMoreActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreActivityIndicator.swift; sourceTree = "<group>"; };
-		862EB81CB298314C6A5FD0FB /* Pods-Jet2TravelAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TravelAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Jet2TravelAssignmentTests/Pods-Jet2TravelAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
-		DFE7E1E0F532A911BFD8A1E9 /* Pods-Jet2TravelAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TravelAssignment.debug.xcconfig"; path = "Target Support Files/Pods-Jet2TravelAssignment/Pods-Jet2TravelAssignment.debug.xcconfig"; sourceTree = "<group>"; };
-		E74B6AA63A87B11643C3EA00 /* Pods-Jet2TravelAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TravelAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Jet2TravelAssignmentTests/Pods-Jet2TravelAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F12CC01F9EC8A9351176FA5A /* Pods-Jet2TravelAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TravelAssignment.release.xcconfig"; path = "Target Support Files/Pods-Jet2TravelAssignment/Pods-Jet2TravelAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		7AABB561DF5CDBB4BBBB0D52 /* Pods-Jet2TravelAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TravelAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Jet2TravelAssignmentTests/Pods-Jet2TravelAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6AABD51FBC093D7FE366976 /* Pods-Jet2TravelAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TravelAssignment.release.xcconfig"; path = "Target Support Files/Pods-Jet2TravelAssignment/Pods-Jet2TravelAssignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8BC7784236D602E326BCEB8 /* Pods_Jet2TravelAssignment.framework in Frameworks */,
+				6DFE3CB3245C9E0B00D08014 /* JGProgressHUD in Frameworks */,
+				2A059CA3EDE2A5242B972610 /* Pods_Jet2TravelAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,33 +87,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF48B0D59DFE9E8508CA98E /* Pods_Jet2TravelAssignmentTests.framework in Frameworks */,
+				39E035C412132CCF8D17FA16 /* Pods_Jet2TravelAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		403D6BE8FC5B8556DE10C8A2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DFE7E1E0F532A911BFD8A1E9 /* Pods-Jet2TravelAssignment.debug.xcconfig */,
-				F12CC01F9EC8A9351176FA5A /* Pods-Jet2TravelAssignment.release.xcconfig */,
-				E74B6AA63A87B11643C3EA00 /* Pods-Jet2TravelAssignmentTests.debug.xcconfig */,
-				862EB81CB298314C6A5FD0FB /* Pods-Jet2TravelAssignmentTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		6D1C43992459561A00245C22 = {
 			isa = PBXGroup;
 			children = (
 				6D1C43A42459561A00245C22 /* Jet2TravelAssignment */,
 				6D1C43BE2459561D00245C22 /* Jet2TravelAssignmentTests */,
 				6D1C43A32459561A00245C22 /* Products */,
-				403D6BE8FC5B8556DE10C8A2 /* Pods */,
-				D63643089D89D6B8E9ECC21D /* Frameworks */,
+				927A2EA79B6E5316D1FEAEB6 /* Pods */,
+				7C08B6CB8CC354F5D816F279 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,13 +213,24 @@
 			path = TableCell;
 			sourceTree = "<group>";
 		};
-		D63643089D89D6B8E9ECC21D /* Frameworks */ = {
+		7C08B6CB8CC354F5D816F279 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A0704C64180B34A574D7C60 /* Pods_Jet2TravelAssignment.framework */,
-				207A8BFB3BEE1318A8CF7DA6 /* Pods_Jet2TravelAssignmentTests.framework */,
+				1DCFA36B1E19CDB8A4CE3C92 /* Pods_Jet2TravelAssignment.framework */,
+				0095A186E69DD23DFF9030B8 /* Pods_Jet2TravelAssignmentTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		927A2EA79B6E5316D1FEAEB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04AC9ED8EF7A0542712B9EDA /* Pods-Jet2TravelAssignment.debug.xcconfig */,
+				C6AABD51FBC093D7FE366976 /* Pods-Jet2TravelAssignment.release.xcconfig */,
+				1D60935CD5C5099693190F5A /* Pods-Jet2TravelAssignmentTests.debug.xcconfig */,
+				7AABB561DF5CDBB4BBBB0D52 /* Pods-Jet2TravelAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +250,9 @@
 			dependencies = (
 			);
 			name = Jet2TravelAssignment;
+			packageProductDependencies = (
+				6DFE3CB2245C9E0B00D08014 /* JGProgressHUD */,
+			);
 			productName = Jet2TravelAssignment;
 			productReference = 6D1C43A22459561A00245C22 /* Jet2TravelAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -261,7 +265,7 @@
 				6D1C43B72459561D00245C22 /* Sources */,
 				6D1C43B82459561D00245C22 /* Frameworks */,
 				6D1C43B92459561D00245C22 /* Resources */,
-				FD164DF2CDC20610EEEF0349 /* [CP] Embed Pods Frameworks */,
+				CB68BAD149FBC889C75A22CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,6 +305,9 @@
 				Base,
 			);
 			mainGroup = 6D1C43992459561A00245C22;
+			packageReferences = (
+				6DFE3CB1245C9E0B00D08014 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+			);
 			productRefGroup = 6D1C43A32459561A00245C22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,7 +383,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD164DF2CDC20610EEEF0349 /* [CP] Embed Pods Frameworks */ = {
+		CB68BAD149FBC889C75A22CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -572,7 +579,7 @@
 		};
 		6D1C43C52459561D00245C22 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFE7E1E0F532A911BFD8A1E9 /* Pods-Jet2TravelAssignment.debug.xcconfig */;
+			baseConfigurationReference = 04AC9ED8EF7A0542712B9EDA /* Pods-Jet2TravelAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,7 +598,7 @@
 		};
 		6D1C43C62459561D00245C22 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F12CC01F9EC8A9351176FA5A /* Pods-Jet2TravelAssignment.release.xcconfig */;
+			baseConfigurationReference = C6AABD51FBC093D7FE366976 /* Pods-Jet2TravelAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -610,7 +617,7 @@
 		};
 		6D1C43C82459561D00245C22 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E74B6AA63A87B11643C3EA00 /* Pods-Jet2TravelAssignmentTests.debug.xcconfig */;
+			baseConfigurationReference = 1D60935CD5C5099693190F5A /* Pods-Jet2TravelAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -633,7 +640,7 @@
 		};
 		6D1C43C92459561D00245C22 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 862EB81CB298314C6A5FD0FB /* Pods-Jet2TravelAssignmentTests.release.xcconfig */;
+			baseConfigurationReference = 7AABB561DF5CDBB4BBBB0D52 /* Pods-Jet2TravelAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -685,6 +692,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DFE3CB1245C9E0B00D08014 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DFE3CB2245C9E0B00D08014 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DFE3CB1245C9E0B00D08014 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6D1C43AE2459561A00245C22 /* Jet2TravelAssignment.xcdatamodeld */ = {
